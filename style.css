@@ -1,0 +1,44 @@
+body {
+    background-color: lightblue;
+    text-align: center;
+}
+
+h1 {
+    text-align: center;
+}
+
+h1, h2, a {
+    font-family: helvetica;
+}
+
+ol, ul {
+    display: inline-block;
+}
+
+li {
+    color: red;
+    padding: 3px 0;
+}
+
+img {
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    border: 2px solid black;
+    margin: 5px 0;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5em;
+    justify-content: center;
+    align-items: center;
+    margin: 1.5em;
+}
+
+@media only screen and (max-width: 600px) {
+    .grid {
+        grid-template-columns: 1fr;
+    }
+  }
